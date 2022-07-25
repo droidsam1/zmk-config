@@ -25,7 +25,7 @@
 &kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp BSLH
 &kp LSHFT &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp DEL
-                        &kp LGUI &mo 2 &kp LALT   &kp SPACE  &kp RET &kp RALT &kp RSHFT &mo 1
+                        &kp LGUI &mo 2 &kp LALT   &kp SPACE  &kp RET &mo 1	&kp RALT &kp RSHFT 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -33,13 +33,13 @@
 
 		lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-// |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-// |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-//                     |      |      |      |        |  |       |      |       |       |
+// | GRAVE | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       		|
+// |       |     |     |      |      |      |                   |      | HOME  |  UP   | END  |       |  PAGE_UP	|
+// |       |     |     |      |      |      |                   |      | LEFT  | DOWN  | RIGHT|       |  PAGE_DOWN	|
+// |       |     |     |      |      |      |                   |      |       |       |      |       |      		|
+//                     |      |      |      |        |  |       |      |  APP  |       |
 			bindings = <
-&bt BT_CLR 			&bt BT_SEL 0     	&bt BT_SEL 1      			&bt BT_SEL 2      &bt BT_SEL 3 	&bt BT_SEL 4                 &trans    &trans    &trans     &trans    &trans    &trans
+&bt GRAVE 			&bt BT_SEL 0     	&bt BT_SEL 1      			&bt BT_SEL 2      &bt BT_SEL 3 	&bt BT_SEL 4                 &trans    &trans    &trans     &trans    &trans    &trans
 &ext_power EP_ON 	&ext_power EP_OFF 	&ext_power EP_TOG           &trans            &trans       	&trans                       &trans    &kp HOME  &kp UP		&kp END   &trans   &kp PAGE_UP
 &trans  			&trans		        &trans            			&trans            &trans   		&trans                    	 &trans    &kp LEFT  &kp DOWN 	&kp RIGHT &trans   &kp PAGE_DOWN
 &trans    &trans 		  &trans    		&trans    		 &trans		  &trans	&trans		  &trans    &trans	 &trans    &trans		&trans      &trans 			&trans
@@ -51,10 +51,10 @@
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-// |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
+// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
+// |       |   	 |     |      |      |      |                   |      |       |       |      |       |
+// |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
 //                     |      |      |      |        |  |       |      |       |       |
 			bindings = <
 &kp F1    &kp F2          &kp F3            &kp F4           &kp F5       &kp F6 	&kp F7    &kp F8    &kp F9      &kp F10   	&kp F11   		&kp F12
