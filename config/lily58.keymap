@@ -40,7 +40,7 @@
 //                     |      |      |      |        |  |       |      |  APP  |       |
 			bindings = <
 &kp GRAVE 			&bt BT_SEL 0     	&bt BT_SEL 1      			&bt BT_SEL 2      &bt BT_SEL 3 	&bt BT_SEL 4                 &trans    &trans    &trans     &trans    &trans    &trans
-&ext_power EP_ON 	&ext_power EP_OFF 	&ext_power EP_TOG           &trans            &trans       	&trans                       &trans    &kp HOME  &kp UP		&kp END   &trans   &kp PAGE_UP
+&ext_power EP_ON 	&ext_power EP_OFF 	&ext_power EP_TOG           &bt BT_CLR         &trans       	&trans                       &trans    &kp HOME  &kp UP		&kp END   &trans   &kp PAGE_UP
 &trans  			&trans		        &trans            			&trans            &trans   		&trans                    	 &trans    &kp LEFT  &kp DOWN 	&kp RIGHT &trans   &kp PAGE_DOWN
 &trans    &trans 		  &trans    		&trans    		 &trans		  &trans	&trans		  &trans    &trans	 &trans    &trans		&trans      &trans 			&trans
                                               &trans            &trans       &trans    &trans   &trans    &kp K_APP  &trans    &trans
