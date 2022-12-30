@@ -8,6 +8,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/mouse.h>
+
+
+&mmv {
+    time-to-max-speed-ms = <50>;
+};
+
+&mwh {
+    acceleration-exponent=<1>;
+};
 
 / {
 	keymap {
@@ -51,17 +61,17 @@
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// |       |     |     |      |      |      |                   |      |       |       |   -  |   =   |       |
-// |       |   	 |     |      |      |      |                   |      |       |       |      |       |
-// |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
-//                     |      |      |      |        |  |       |      |       |       |
+// |  F1   |  F2 |  	F3			|  		F4			|  		F5 				|  		F6  			|                   				|  F7  	|  F8   |  F9   |  F10 |  F11  |  F12  	|
+// |       |     |  &mkp LCLK 		| &mmv MOVE_UP 		|     &mkp RCLK  		|      					|									|		|       |   -  	|   =  |       |		|
+// |       |   	 | &mmv MOVE_LEFT   | &mmv MOVE_DOWN	|  &mmv MOVE_RIGHT		| 	&mwh SCROLL_UP      |               				    |      	|       |       |      |       |	   	|
+// |       |     |     				|      				|  &mwh SCROLL_LEFT		|   &mwh SCROLL_DOWN	|  &mwh SCROLL_RIGHT	|  |       	|      	|       |       |      |       |       	|
+//                     				|      				|      					|      					|        				|  |       	|      	|       |       |
 			bindings = <
-&kp F1    &kp F2          &kp F3            &kp F4           &kp F5       &kp F6 	&kp F7    &kp F8    &kp F9      &kp F10   	&kp F11   		&kp F12
-&trans    &trans          &trans            &trans           &trans       &trans    &trans    &trans    &trans		&kp MINUS	&kp EQUAL	 	&trans 
-&trans    &trans 		  &trans    		&trans    		 &trans		  &trans    &trans	  &trans    &trans		&trans      &trans 			&trans
-&trans    &trans 		  &trans    		&trans    		 &trans		  &trans	&trans		  &trans    &trans	  &trans    &trans		&trans      &trans 			&trans
-						  &trans	&trans  &trans    &trans   		&trans    &trans      &trans    &trans
+&kp F1    &kp F2          &kp F3            &kp F4           		&kp F5      		&kp F6 													&kp F7    &kp F8    &kp F9      &kp F10   	&kp F11   		&kp F12
+&trans    &trans          &mkp LCLK         &mmv MOVE_UP            &mkp RCLK        	&trans    												&trans    &trans    &trans		&kp MINUS	&kp EQUAL	 	&trans 
+&trans    &trans 		  &mmv MOVE_LEFT    &mmv MOVE_DOWN    		&mmv MOVE_RIGHT		&mwh SCROLL_UP    										&trans	  &trans    &trans		&trans      &trans 			&trans
+&trans    &trans 		  &trans    		&trans    		 		&mwh SCROLL_LEFT	&mwh SCROLL_DOWN	 &mwh SCROLL_RIGHT			&trans    &trans	  &trans    &trans		&trans      &trans 			&trans
+						  										&trans		&trans	  &trans    &trans   									&trans    &trans      &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
