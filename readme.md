@@ -14,7 +14,7 @@ _Uses an experimental zmk feature to [enable mouse keys](https://github.com/zmkf
 * 2x [2U DSA Blank](https://es.aliexpress.com/item/32895127912.html?spm=a2g0o.order_list.order_list_main.205.4bb8194dmCyLto&gatewayAdapt=glo2esp) black keycaps
  
 ## Configuration
-* No dislpays
+* No displays
 * Bluetooth
 * Mouse keys enabled
 
