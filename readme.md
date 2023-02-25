@@ -9,9 +9,10 @@ _Uses an experimental zmk feature to [enable mouse keys](https://github.com/zmkf
 * 1x Lily58 Hotswap Kit ([mechboards.co.uk](https://mechboards.co.uk/products/lily58-kit)) 
 * 2x Nice!nano v2 wireless controller ([42keebs.eu](https://42keebs.eu/shop/parts/controllers/nice-nano-v2-wireless-controller/))
 * 2x 150mA [Li-Po Battery](https://es.aliexpress.com/af/302030-lithium-polymer-battery.html?spm=a2g0o.best.1000002.0&initiative_id=AS_20230224134604&origin=n&dida=y)
-* 0x OLEDs
-* 56x [1U DSA Blank](https://es.aliexpress.com/item/32832417476.html?spm=a2g0o.order_list.order_list_main.206.4bb8194dmCyLto&gatewayAdapt=glo2esp) black keycaps
-* 2x [2U DSA Blank](https://es.aliexpress.com/item/32895127912.html?spm=a2g0o.order_list.order_list_main.205.4bb8194dmCyLto&gatewayAdapt=glo2esp) black keycaps
+* 68x Gazzew Boba U4 silence tactile switch [aliexpress](https://es.aliexpress.com/item/1005001809357064.html?spm=a2g0o.order_list.order_list_main.10.f9c2194du0Q7VF&gatewayAdapt=glo2esp)
+* 56x 1U DSA blank black keycaps[aliexpress](https://es.aliexpress.com/item/32832417476.html?spm=a2g0o.order_list.order_list_main.206.4bb8194dmCyLto&gatewayAdapt=glo2esp) 
+* 2x 2U DSA blank black keycaps[aliexpress](https://es.aliexpress.com/item/32895127912.html?spm=a2g0o.order_list.order_list_main.205.4bb8194dmCyLto&gatewayAdapt=glo2esp)
+* No OLEDs
  
 ## Configuration
 * No displays
