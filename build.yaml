@@ -13,9 +13,10 @@
 #
 ---
 include:
-  - board: nice_nano@2.0.0/nrf52840/zmk
+  - board: nice_nano//zmk
     shield: lily58_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano@2.0.0/nrf52840/zmk
+  - board: nice_nano//zmk
     shield: lily58_right
+    cmake-args: -DCONFIG_ZMK_STUDIO=y

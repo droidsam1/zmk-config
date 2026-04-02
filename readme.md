@@ -24,11 +24,12 @@ _Uses official ZMK pointing support to enable mouse keys._
 * No displays
 * Bluetooth
 * Mouse keys enabled via ZMK pointing support (`CONFIG_ZMK_POINTING`)
-* Build target uses `nice_nano@2.0.0/nrf52840/zmk` (explicit Zephyr 4.1+ board variant format, replacing legacy `nice_nano_v2`)
+* Build target uses `nice_nano//zmk` ([Zephyr 4.1 / HWMv2](https://zmk.dev/blog/2025/12/09/zephyr-4-1#zmk-board-variant) shorthand; replaces legacy `nice_nano_v2`).
+* GitHub Actions use a local copy of ZMK’s user-config workflow with `zmkfirmware/zmk-build-arm:4.1`, matching ZMK `main` (the stock reusable workflow still points at the older `:stable` image).
 
 
 ## ZMK Studio
-* Enabled in CI build for the central/left half using `studio-rpc-usb-uart` + `CONFIG_ZMK_STUDIO=y`.
+* Left half CI build uses `studio-rpc-usb-uart` + `CONFIG_ZMK_STUDIO=y`. The right half sets `CONFIG_ZMK_STUDIO=y` as well so the shared keymap can reference `studio_unlock` (RPC stays central-only per ZMK’s split defaults).
 * Open [zmk.studio](https://zmk.studio/) in Chrome/Edge and connect over USB to the left half.
 * Use the `studio_unlock` key on the _lower_ layer before remapping.
 * Optional convenience keys were added on the _lower_ layer for `OUT_USB` and `OUT_BLE`.
