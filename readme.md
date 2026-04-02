@@ -24,7 +24,7 @@ _Uses official ZMK pointing support to enable mouse keys._
 * No displays
 * Bluetooth
 * Mouse keys enabled via ZMK pointing support (`CONFIG_ZMK_POINTING`)
-* Build target uses `nice_nano//zmk` (Zephyr 4.1+ board variant format, replacing legacy `nice_nano_v2`)
+* Build target uses `nice_nano@2.0.0/nrf52840/zmk` (explicit Zephyr 4.1+ board variant format, replacing legacy `nice_nano_v2`)
 
 
 ## ZMK Studio
