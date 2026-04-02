@@ -2,7 +2,7 @@
 
  This is my personal configuration for the Lily58 split keyboard powered by two nice!nanos
  
-_Uses an experimental zmk feature to [enable mouse keys](https://github.com/zmkfirmware/zmk/pull/1430)_
+_Uses official ZMK pointing support to enable mouse keys._
 
 ## Hardware
 
@@ -23,7 +23,7 @@ _Uses an experimental zmk feature to [enable mouse keys](https://github.com/zmkf
 ## Configuration
 * No displays
 * Bluetooth
-* Mouse keys enabled
+* Mouse keys enabled via ZMK pointing support (`CONFIG_ZMK_POINTING`)
 
 ## Keymap
 
