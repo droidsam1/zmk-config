@@ -25,6 +25,13 @@ _Uses official ZMK pointing support to enable mouse keys._
 * Bluetooth
 * Mouse keys enabled via ZMK pointing support (`CONFIG_ZMK_POINTING`)
 
+
+## ZMK Studio
+* Enabled in CI build for the central/left half using `studio-rpc-usb-uart` + `CONFIG_ZMK_STUDIO=y`.
+* Open [zmk.studio](https://zmk.studio/) in Chrome/Edge and connect over USB to the left half.
+* Use the `studio_unlock` key on the _lower_ layer before remapping.
+* Optional convenience keys were added on the _lower_ layer for `OUT_USB` and `OUT_BLE`.
+
 ## Keymap
 
 ### _main_
